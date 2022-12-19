@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
-
+import UserHubLogo from './Components/UserHubLogo';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -57,6 +57,7 @@ const App = () => {
 
   return (
     <View style={styles.container}>
+     <UserHubLogo></UserHubLogo>
       <TextInput
         style={styles.input}
         value={search}
